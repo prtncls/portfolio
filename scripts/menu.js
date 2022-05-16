@@ -3,7 +3,6 @@ $(document).ready(function () {
     const closeMenuButton = $('#closeMenuButton')
     const openMenuButton = $('#openMenuButton')
     const sections = $('section')
-    //const home = $('.home')
     const about = $('.about')
     const portfolio = $('.portfolio')
     const contact = $('.contact')
@@ -18,17 +17,11 @@ $(document).ready(function () {
 
     //abrir menu
     function abrirMenu() {
-        console.log('abrir menu');
         openMenuAnim.play();
-        //itemsListMobile.css('visibility', 'visible');
         closeMenuButton.css('display', 'unset');
-        //openMenuButton.css('display', 'visible');
     }
     //cerrar menu
     function cerrarMenu() {
-        console.log('cerrar menu');
-        //itemsListMobile.css('visibility', 'hidden');
-        //openMenuButton.css('display', 'unset');
         closeMenuButton.css('display', 'none');
         openMenuAnim.reverse();
     }
@@ -38,7 +31,6 @@ $(document).ready(function () {
 
     //abrir about mobile
     aboutLinkMobile.on('click', function abrirAbout() {
-        console.log('abrir about');
         sections.css('display', 'none');
         about.css('display', 'flex');
         navNameMobile.css('visibility', 'visible');
@@ -46,7 +38,6 @@ $(document).ready(function () {
     })
     //abrir portfolio mobile
     portfolioLinkMobile.on('click', function abrirPortfolio() {
-        console.log('abrir portfolio');
         sections.css('display', 'none');
         portfolio.css('display', 'unset');
         navNameMobile.css('visibility', 'visible');
@@ -55,7 +46,6 @@ $(document).ready(function () {
 
     //abrir contacto mobile
     contactLinkMobile.on('click', function abrirContact() {
-        console.log('abrir contact');
         sections.css('display', 'none');
         contact.css('display', 'flex');
         navNameMobile.css('visibility', 'visible');
@@ -64,21 +54,18 @@ $(document).ready(function () {
 
     //abrir about desktop
     aboutLinkDesktop.on('click', function abrirAbout() {
-        console.log('abrir about');
         sections.css('display', 'none');
         about.css('display', 'flex');
     })
 
     //abrir portfolio desktop
     portfolioLinkDesktop.on('click', function abrirPortfolio() {
-        console.log('abrir portfolio');
         sections.css('display', 'none');
         portfolio.css('display', 'unset');
     })
 
     //abrir contacto desktop
     contactLinkDesktop.on('click', function abrirContact() {
-        console.log('abrir contact');
         sections.css('display', 'none');
         contact.css('display', 'flex');
     })
@@ -93,7 +80,5 @@ $(document).ready(function () {
 
     //inicializo linea de tiempo
     createOpenMenuAnim()
-
-
 
 })
